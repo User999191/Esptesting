@@ -52,7 +52,7 @@ local function DrawLine(From, To)
     local ToPos = Vector2.new(ToScreen.X, ToScreen.Y);
 
     local Line = Drawing.new("Line");
-        Line.Thickness = 4;
+        Line.Thickness = 1;
         Line.From = FromPos
         Line.To = ToPos
         Line.Color = Color3.fromRGB(62.1041, 69.9420, 13.2445);
