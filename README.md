@@ -27,7 +27,7 @@ local function DrawQuad(PosA, PosB, PosC, PosD)
     local PosDVec = Vector2.new(PosDScreen.X, PosDScreen.Y);
 
     local Quad = Drawing.new("Quad");
-        Quad.Thickness = .5;
+        Quad.Thickness = .7;
         Quad.Color = Color3.fromRGB(255, 255, 255);
         Quad.Transparency = .25;
         Quad.ZIndex = 1;
@@ -52,7 +52,7 @@ local function DrawLine(From, To)
     local ToPos = Vector2.new(ToScreen.X, ToScreen.Y);
 
     local Line = Drawing.new("Line");
-        Line.Thickness = 2;
+        Line.Thickness = 4;
         Line.From = FromPos
         Line.To = ToPos
         Line.Color = Color3.fromRGB(62.1041, 69.9420, 13.2445);
@@ -135,5 +135,7 @@ end;
 -- Main
 RunService.RenderStepped:Connect(BoxEsp);
 
-
+while wait(0.5) do
+setfpscap(90)
+end
 
